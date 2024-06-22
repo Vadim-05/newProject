@@ -1,0 +1,92 @@
+.category {
+  width: 350px;
+  height: 460px;
+  background: #FEFEFE;
+  padding: 20px 0px 48px 16px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top:24px;
+    &-selector__buttons {
+        display: flex;
+        justify-content: space-between;
+        overflow: auto;
+    }
+    &-selector__button{
+        min-width: 132px;
+        height: 50px;
+        background: none;
+        cursor: pointer;
+        border: none;
+        align-items: center;
+        display: flex;
+        margin-right: 12px;
+    }
+    &-selector__icon-btn{
+        margin: 0 12px 0 20px;
+    }
+    &-button-active{
+        border-radius: 25px;
+        background: #0094FF12;
+    }
+    &-selector__list-item{
+        width: 292px;
+        height: 64px;
+        margin-right: 16px;
+        list-style: none;
+        border: 1px solid #F3F5F8;
+        border-radius: 20px;
+        margin: 16px 16px 0 0;
+        display: flex;
+        align-items: center;
+    }
+    &-selector__icon{
+        margin: 0 20px 0 24px;
+    }
+    &-selector__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        overflow: auto;
+        height: 338px;
+    } 
+    @media (min-width: 768px) {
+        width: 560px;
+        margin: 30px 0 0 30px;
+        height: 600px;
+        padding: 32px 32px 0 32px;
+        
+        &-selector__list-item{
+            width: 224px;
+        }
+        &-selector__button{
+            width: 191px;
+            height: 60px;
+            background: none;
+            cursor: pointer;
+            border: none;
+        }
+        &-button-active{
+            background: #0094FF12;
+        }
+        &-selector__list{
+            margin-top: 0px;
+            height: fit-content;
+        }
+    }
+    @media (min-width: 1024px) {
+        width: 556px ;
+        margin-top: 0px;
+    }
+    @media (min-width: 1920px) {
+        width: 924px;
+        
+        &-selector__buttons{
+          margin-bottom: 40px;
+        }
+        &-selector__list-item{
+            width: 260px;
+            margin-top: 16px;
+        }
+    }
+}

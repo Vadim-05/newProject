@@ -1,0 +1,96 @@
+.services {
+  position: relative;
+  display: inline-block;
+    &__option{
+      width: 100%;
+      height: 40px; 
+    }
+    &-toggle-mobile {
+      display: block;
+      background-color: #f8f9fa;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      width: 350px;
+      height: 64px;
+    }
+    &-toggle-table{
+      display: none; 
+      border-radius: 25px;
+      overflow: auto;
+    }
+    &-menu {
+      position: absolute;
+      background-color: #ffffff;
+      border: 1px solid #ced4da;
+      width: 350px;
+      max-height: 0;
+      overflow: hidden;
+      list-style-type: none;
+      padding: 0;
+      transition: max-height 0.3s ease-out; 
+      overflow: auto;
+ 
+      &-open {
+        max-height: 200px; 
+        animation: white-circle 0.4s forwards;
+      }
+      li {
+        padding: 8px 12px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+    @keyframes white-circle {
+      from {
+        transform: scaleY(0);
+        transform-origin: top;
+      }
+      to {
+        transform: scaleY(1);
+        transform-origin: top;
+      }
+    }
+  @media (min-width: 1024px) {
+    &-menu {
+      border: none;
+    }
+    &-button{
+      width: 352px;
+      height: 80px;
+      border: none;
+      cursor: pointer;
+      background: none;
+    }
+    &-toggle-mobile {
+      display: none;
+    }
+    &-toggle-table{
+      display: block;
+      width: 287px;
+      height: 600px;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      padding: 16px 15px 8px 15px;
+    }
+    &-item{
+      padding-top: 16px;
+      list-style-type: none;
+      justify-content: flex-start;
+      display: flex;
+    }
+    &-active{
+      background: #0094FF12;
+      border-radius: 25px;
+    }  
+  }
+  @media (min-width: 1920px) {
+    &-toggle-table{
+      width: 466px;
+      height: 600px;
+    }
+  }
+}
