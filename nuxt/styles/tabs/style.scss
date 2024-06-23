@@ -1,12 +1,14 @@
+@import '@/styles/colors.scss';
 .category {
   width: 350px;
   height: 460px;
-  background: #FEFEFE;
+  background: $background-services-category;
   padding: 20px 0px 48px 16px;
   border-radius: 25px;
   box-sizing: border-box;
   margin: 0;
   margin-top:24px;
+
     &-selector__buttons {
         display: flex;
         justify-content: space-between;
@@ -27,14 +29,14 @@
     }
     &-button-active{
         border-radius: 25px;
-        background: #0094FF12;
+        background: $active-btn;
     }
     &-selector__list-item{
         width: 292px;
         height: 64px;
         margin-right: 16px;
         list-style: none;
-        border: 1px solid #F3F5F8;
+        border: 1px solid $main-background;
         border-radius: 20px;
         margin: 16px 16px 0 0;
         display: flex;
@@ -62,12 +64,6 @@
         &-selector__button{
             width: 191px;
             height: 60px;
-            background: none;
-            cursor: pointer;
-            border: none;
-        }
-        &-button-active{
-            background: #0094FF12;
         }
         &-selector__list{
             margin-top: 0px;
