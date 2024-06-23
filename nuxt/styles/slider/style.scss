@@ -1,5 +1,6 @@
+@import '@/styles/colors.scss';
 .slider{
-	background: #080B18;
+	background: $slider-main-background;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -51,8 +52,8 @@
 	}
 	&-container{
 		padding: 60px 30px 60px 30px;
-		border: 2px solid #FFFFFF08;
-		background: #FFFFFF03;
+		border: 2px solid $slider-border-background;
+		background: $slider-container-background;
 		color: white;
 		width: 350px;
 		height: 410px;

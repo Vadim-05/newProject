@@ -1,3 +1,4 @@
+@import '@/styles/colors.scss';
 .services {
   position: relative;
   display: inline-block;
@@ -7,7 +8,7 @@
     }
     &-toggle-mobile {
       display: block;
-      background-color: #f8f9fa;
+      background-color: $background-services-category;
       border: none;
       padding: 8px 12px;
       cursor: pointer;
@@ -21,8 +22,8 @@
     }
     &-menu {
       position: absolute;
-      background-color: #ffffff;
-      border: 1px solid #ced4da;
+      background-color: $background-services-category;
+      border: 1px solid $menu-border-background;
       width: 350px;
       max-height: 0;
       overflow: hidden;
@@ -33,18 +34,18 @@
  
       &-open {
         max-height: 200px; 
-        animation: white-circle 0.4s forwards;
+        animation: open-menu 0.4s forwards;
       }
       li {
         padding: 8px 12px;
         cursor: pointer;
 
         &:hover {
-          background-color: #f1f1f1;
+          background-color: $hover-background;
         }
       }
     }
-    @keyframes white-circle {
+    @keyframes open-menu {
       from {
         transform: scaleY(0);
         transform-origin: top;
@@ -72,7 +73,7 @@
       display: block;
       width: 287px;
       height: 600px;
-      background: #FFFFFF;
+      background: $background-services-category;
       box-sizing: border-box;
       padding: 16px 15px 8px 15px;
     }
@@ -83,7 +84,7 @@
       display: flex;
     }
     &-active{
-      background: #0094FF12;
+      background: $active-btn;
       border-radius: 25px;
     }  
   }
